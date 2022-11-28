@@ -1,0 +1,106 @@
+.header {
+display: flex;
+background-color: #1e1870;
+}
+.Facebook{ 
+color: #faf6f4;
+width: 90%;
+margin-left: 50px;
+}
+.logout{
+    color: #d7d6ee;
+margin-top:10px;
+padding: 5px;
+width: 10%;
+}
+.all{
+display: flex;
+border: 1px black solid;
+width: 100%;
+}
+.left{
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+border: 1px black solid;
+width: 25%
+ 
+}
+.center{
+flex-direction: column;
+display: flex;
+margin-top: 20px;
+border: 1px black solid;
+width: 50%
+}
+.right{
+flex-direction: column;
+display: flex;
+width:25%;
+margin-top: 20px;
+border: 1px black solid;
+}
+.photo{
+}
+.colortext{
+color: #218cee;   
+}
+.Ilyas_Zhuanyshev{
+margin-left: 20px;
+color: #2a2d34;
+}
+.No_matter{
+color: #a3a9ab;
+margin-left: 20px;
+margin-right: 20px;
+}
+.button{
+border: none;
+background-color: white;
+display: flex;
+color: #7b748d;
+width:100%;
+height:30px;
+margin-top: 10px;
+padding-left: 20px;
+padding-top: 5px;
+}
+.button:hover {
+color: black;
+background-color: gray;
+}
+.button2{
+background-color: #1b1a6b;
+color: white;
+margin-top: 10px;
+margin-left: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.Assylkhan{
+color: #2a2d34;
+}
+.Just{
+color: #a3a9ab;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+}
+.block{
+
+}
+.double{
+    display: flex;
+    justify-content:space-between;    
+    padding: 10px 10px;
+}
+.time{
+    color: gray;
+}
+.2th{
+    display: flex;
+    justify-content:space-between;    
+    padding: 10px 10px;
+}

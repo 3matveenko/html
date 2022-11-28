@@ -1,0 +1,70 @@
+
+<html lang="en">
+
+<head>
+
+  <title>DOM events</title>
+
+</head>
+
+<body>
+ <button onclick="changePicture0()">Change IMG -</button>
+     <img src="1.jpg" id="pic" width="1000px">
+  <button onclick="changePicture1()">Change IMG +</button>
+  <script>
+    let n = 1;
+    function changePicture1(){
+     n=n+1;
+    
+    if(n==1){
+      pic.src = "1.jpg";
+    }
+    if(n==2){
+      pic.src = "2.jpg";
+    }
+        if(n==3){
+      pic.src = "3.jpg";
+    }
+        if(n==4){
+      pic.src = "4.jpg";
+    }
+        if(n==5){
+      pic.src = "5.jpg";
+    }
+        if(n==6){
+      pic.src = "6.jpg";
+    }
+    if(n==7){
+      n=1
+    }
+}
+    function changePicture0(){
+     n=n-1;   
+    if(n==1){
+      pic.src = "1.jpg";
+    }
+    if(n==2){
+      pic.src = "2.jpg";
+    }
+        if(n==3){
+      pic.src = "3.jpg";
+    }
+        if(n==4){
+      pic.src = "4.jpg";
+    }
+        if(n==5){
+      pic.src = "5.jpg";
+    }
+        if(n==6){
+      pic.src = "6.jpg";
+    }
+    if(n==0){
+      n=6
+    }
+}
+
+  </script>
+
+</body>
+
+</html>

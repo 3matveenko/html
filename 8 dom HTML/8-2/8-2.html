@@ -1,0 +1,32 @@
+    <html>
+    <head>
+            <title>
+                    8-1
+            </title>
+    </head>
+            <link rel="stylesheet" type="text/css" href="8-2.css">
+            <body>
+                               
+                                    
+                                            <button id="elem" class="button" onclick="ff1()">-</button>   
+                                        
+                                        <div id="elem2" class="button">n</div>
+                                        
+                                            <button id="elem3" class="button" onclick="ff2()">+</button>  
+            
+                            
+                                <script>
+                                let n = 0;
+                                function ff2(){
+                                    n=n+1;
+                                elem2.innerHTML=parseInt(n);
+                                  } 
+                                  function ff1(){
+                                    n=n-1
+                                elem2.innerHTML=parseInt(n);
+                                  } 
+
+                                </script>
+                            
+            </body>
+</html>

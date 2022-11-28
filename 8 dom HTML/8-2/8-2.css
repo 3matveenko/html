@@ -1,0 +1,25 @@
+.string{
+display: flex;
+
+}
+.error{
+height: 25px; 
+color: red;
+}
+.button{
+color: black;
+display: flex;
+margin-left: 100px;
+padding: 100px;
+}
+.all{
+display: flex;
+}
+.button2{
+color: red;
+
+display: flex;
+margin-left: 100px;
+padding: 100px;
+margin-bottom:100px;
+}

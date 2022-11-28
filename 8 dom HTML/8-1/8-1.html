@@ -1,0 +1,77 @@
+<html>
+    <head>
+            <title>
+                    8-1
+            </title>
+    </head>
+            <link rel="stylesheet" type="text/css" href="8-1.css">
+            <body>
+                                <div id="myform">
+                                        <div class="string">
+                                            LOGIN:<div id="loginError" class="error"></div>   
+                                        </div>
+                                        <div class="string">
+                                            <input class="input" type="text" id="login">  
+                                        </div>
+                                        <div class="string">
+                                            PASSWORD:<div id="passwordError" class="error"></div>   
+                                        </div>
+                                        <div class="string">
+                                            <input class="input" type="password" id="password">   
+                                        </div>
+                                        <div class="string">
+                                            <button class="button" onclick="checkUser()">Login</button>   
+                                        </div>
+                                </div>
+                                <script type="text/javascript">
+                        let usersArray = [
+                        {name: 'Ilyas', login: 'ileke', password: 'ileke123'},
+                        {name: 'Aibek', login: 'aieke', password: 'aieke123'},
+                        {name: 'Eldar', login: 'eleke', password: 'eleke123'}
+                                        ];
+                                        let logField = login;
+                                        let passField = password;
+                                        function checkUser(){
+                                            if(logField.value == '')
+                                                loginError.innerHTML = 'Please enter login';
+
+                                            
+                                            if(passField.value == '')
+                                                passwordError.innerHTML = 'Please enter password';
+
+                                            
+                                            if(logField.value != '' && passField.value != ''){
+                                                let authenticated = false;
+                                            
+                                            
+                                                for(let u of usersArray){
+                                                     if(logField.value == u.login && passField.value == u.password){
+                                                        alert('Welcome: ' + u.name)
+                                                        authenticated = true
+                                                        break
+                                                    }
+                                                }
+                                            
+
+                                                if(!authenticated){
+                                                    login.classList.add('invalid');
+                                                    password.classList.add('invalid');
+                                                }
+                                            }
+                                        }
+
+                                            function checkFields(){
+                                                if(event.target == logField)
+                                                    loginError.innerHTML = ''
+                                                if(event.target == passField)
+                                                    passwordError.innerHTML = ''
+                                            }
+                                            logField.onfocus = checkFields;
+                                            passField.onfocus = checkFields;
+                                        
+                                </script>
+                    ileke
+                    ileke123    
+                            
+            </body>
+</html>

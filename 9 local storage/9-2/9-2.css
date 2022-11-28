@@ -1,0 +1,22 @@
+.button{
+background-color: blue;
+color:white; 
+padding: 5px 30px;	
+}
+.all{
+weight: 500;
+background-color: #412696;
+padding: 10px; 
+display: flex; 
+flex-wrap: wrap; 
+width: 99%; 
+margin: 0 auto;
+}
+.basket{
+background-color: #6777f0;
+border:none;
+}
+.fruitDiv{
+background-color: yellow;
+
+}

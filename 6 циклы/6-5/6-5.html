@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML>
+<html>
+        <body>
+            <script>
+users = [
+    {"login":"ilyas", "password": "qwerty"},
+    {"login":"eldar", "password": "qqqqq"},
+    {"login":"assylkhan", "password": "qweqwe"},
+    {"login":"anel", "password": "asdasd"},
+    {"login":"alibek", "password": "alibek"}
+    ];
+var text = "";
+let flag=false;
+let a = prompt('Input  a');
+for(var i=0;i<users.length;i++){
+    text=users[i]["login"] + " " + users[i]["password"];
+    if(text==a){
+        flag=true;
+    }
+} 
+if(flag){
+    alert('Welcome, you are authenticated');
+}else{alert('User not found');}
+
+ 
+
+    
+            </script>
+        </body>
+</html>

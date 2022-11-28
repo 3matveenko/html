@@ -1,0 +1,31 @@
+
+<!DOCTYPE HTML>
+<html>
+        <body>
+            <script>
+                let students = [];
+            while(true){
+                let a=parseInt(prompt("PRESS 1 TO ADD STUDENT"+"\n"+
+"PRESS 2 TO LIST STUDENT"+"\n"+
+"PRESS 0 TO EXIT"))
+                        if(a==1){
+                                let student = [];                       
+                                student.name = prompt("Insert name");
+                                student.surname = prompt("Insert surname");
+                                student.gpa = prompt("Insert gpa")
+                                students.push(student);
+                            }   
+                           
+                        if(a==2){
+                                for(let i=0;i<students.length;i++){
+                                alert(`${students[i]["name"]}-${students[i]["surname"]}-${students[i]["gpa"]}`);
+                                }
+                        }
+                        if(a==0){
+                                break;
+                            }
+                        }    
+            </script>
+        </body>
+</html>
+

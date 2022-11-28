@@ -1,0 +1,20 @@
+.string{
+display: flex;
+margin-top: 20px;
+width: 100%;   
+
+}
+.input{
+display: flex;   
+}
+.error{
+height: 25px; 
+color: red;
+}
+.button{
+background-color: blue;
+color: white;
+}
+.invalid{
+border-color: red;
+}

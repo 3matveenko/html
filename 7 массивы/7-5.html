@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML>
+<html>
+        <body>
+            <script>
+                cars = [
+    {"name":"Toyota", "price": 12000000, "year": 2015, "volume": 2.2},
+    {"name":"Mercedes", "price": 70000000, "year": 2018, "volume": 3.8},
+    {"name":"Toyota", "price": 7000000, "year": 2013, "volume": 2.0},
+    {"name":"BMW", "price": 11000000, "year": 2011, "volume": 3.0},
+    {"name":"Lexus", "price": 60000000, "year": 2017 ,"volume": 5.7}
+];
+
+            while(true){
+                        let a = parseInt(prompt("INSERT [1] TO SEARCH BY NAME"+"\n"+
+                                                "INSERT [2] TO SEARCH BY YEAR"+"\n"+
+                                                "INSERT [3] TO SEARCH BY ENGINE VOLUME"+"\n"+
+                                                "INSERT [4] TO SEARCH BY PRICE"+"\n"+
+                                                "INSERT [5] TO EXIT"));
+                        if(a==1){
+                                let name = prompt('name');
+                                for(let i=0;i<cars.length;i++){
+                                if(name==cars[i]["name"]){
+                                alert(`${cars[i]["name"]}-${cars[i]["price"]}-${cars[i]["year"]}-${cars[i]["volume"]}`);
+                                }
+                            }   
+                        }   
+                        if(a==3){
+                                let volume1 = parseInt(prompt('INSERT ENGINE VOLUME START FROM:'));
+                                let volume2 = parseInt(prompt('INSERT ENGINE VOLUME ENDS FROM:'));
+                                for(let i=0;i<cars.length;i++){
+                                if(volume1<cars[i]["volume"]&&volume2>cars[i]["volume"]){
+                                alert(`${cars[i]["name"]}-${cars[i]["price"]}-${cars[i]["year"]}-${cars[i]["volume"]}`);
+                                }
+                            }
+                        }
+                        if(a==2){
+                                let year1 = parseInt(prompt('INSERT YEAR START FROM:'));
+                                let year2 = parseInt(prompt('INSERT YEAR ENDS FROM:'));
+                                for(let i=0;i<cars.length;i++){
+                                if(year1<cars[i]["year"]&&year2>cars[i]["year"]){
+                                alert(`${cars[i]["name"]}-${cars[i]["price"]}-${cars[i]["year"]}-${cars[i]["volume"]}`);
+                                }     
+                            }
+
+                        }
+                        if(a==2){
+                                let year1 = parseInt(prompt('INSERT YEAR START FROM:'));
+                                let year2 = parseInt(prompt('INSERT YEAR ENDS FROM:'));
+                                for(let i=0;i<cars.length;i++){
+                                if(year1<cars[i]["year"]&&year2>cars[i]["year"]){
+                                alert(`${cars[i]["name"]}-${cars[i]["price"]}-${cars[i]["year"]}-${cars[i]["volume"]}`);
+                                }     
+                            }
+
+                        }
+                        if(a==4){
+                                let price1 = parseInt(prompt('INSERT PRICE START FROM:'));
+                                let price2 = parseInt(prompt('INSERT PRICE ENDS FROM:'));
+                                for(let i=0;i<cars.length;i++){
+                                if(price1<cars[i]["price"]&&price2>cars[i]["price"]){
+                                alert(`${cars[i]["name"]}-${cars[i]["price"]}-${cars[i]["year"]}-${cars[i]["volume"]}`);
+                                }      
+                            }
+
+                        }
+                        if(a==5){
+                            break;
+                        }
+}
+                
+    
+            </script>
+        </body>
+</html>
+

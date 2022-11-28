@@ -1,0 +1,62 @@
+<html>
+    <head>
+            <title>
+                    8-3
+            </title>
+    </head>
+            <link rel="stylesheet" type="text/css" href="8-3.css">
+            <body>
+                                <div id="myform">
+                                        <div class="string">
+                                            CARD: 
+                                        </div>
+                                        <div class="string">
+                                            <input class="input" type="text" id="login1"> 
+                                            <input class="input" type="text" id="login2"> 
+                                            <input class="input" type="text" id="login3"> 
+                                            <input class="input" type="text" id="login4">  
+                                        </div>
+                                        <div class="string">
+                                            NAME SURNAME:   
+                                        </div>
+                                        <div class="string">
+                                            <input class="input" type="text" id="surname">   
+                                        </div>
+                                        <div class = "string">
+                                            CVV:   
+                                        </div>
+                                        <div class="string">
+                                            <input class="input" type="password" id="cvv">   
+                                        </div>
+                                        <div class="string">
+                                            <button class="button" onclick="checkUser()">COMPLETE</button>   
+                                        </div>
+                                </div>
+                                <script type="text/javascript">
+                        let usersArray = [
+                        {login1: '1', login2: '1', login3: '1', login4:'1', cvv:'1'},
+                                        ];
+                                        let log1Field = login1;
+                                        let log2Filed = login2;
+                                        let log3Field = login3;
+                                        let log4Field = login4;
+                                        let cvvField = cvv;
+                                            function checkUser(){
+                                                for(let u of usersArray){
+                                                     if(log1Field.value == u.login1&& log2Filed.value == u.login2&&log3Field.value == u.login3&&cvvField.value==u.cvv && log4Field.value == u.login4){
+                                                        alert('Transaction completed');
+                                                        break;
+                                                    }else{
+                                                        alert('Invalid Data');
+                                                    }
+                                                }
+                                            }
+                                </script>
+                            
+            </body>
+</html>
+
+
+
+&& log2Filed.value == u.login2&&log3Field.value == u.login3
+ 

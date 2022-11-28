@@ -1,0 +1,58 @@
+.header {
+    padding-bottom: 10px;
+weight: 500;
+background-color: #a10e1b;
+padding: 10px; 
+display: flex;
+flex-wrap: wrap;
+width: 99%;
+margin: 0 auto;
+}
+.name_header{
+text-align: left;
+width: 63%;
+color:white;    
+}
+.link_header{
+text-align: right;
+width: 7%;
+color: white;
+}
+.news{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;    
+    background-color: #57cfcd;
+}
+.iphone{
+    width: 50%; 
+}
+.header_news{
+
+    width: 49%; 
+}
+.Latest_news{
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+    justify-content: center;
+    padding-top: 5px;
+}
+.pictures{
+    font-weight: 500;
+    padding: 20px 10px; 
+    display: flex; 
+    width: 100%;
+}
+.pictures_news {
+    width: 20%;
+}
+.but{
+background-color: #de0723;
+color:white; 
+padding: 5px 30px;
+}
